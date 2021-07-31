@@ -2,11 +2,11 @@
 
 [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) and [Markdown](https://commonmark.org/) are both so called [markup languages](https://en.wikipedia.org/wiki/Markup_language), used to create digital **documents**. HTML is more difficult, but also offers more capabilities. In combination with CSS and Javascript it is even used to build entire **applications** for the Web (the internet).
 
-1. [Quick history](#Quick-history)
-   1. [The HTML standard](#The-HTML-standard)
-   2. [The fancy Markdown](#The-fancy-Markdown)
-2. [Syntax differences](#Syntax-differences)
-3. [Source samples](#Source-samples)
+1. [Quick history](#quick-history)
+   1. [The HTML standard](#the-html-standard)
+   2. [The fancy Markdown](#the-fancy-markdown)
+2. [Syntax differences](#syntax-differences)
+3. [Source samples](#source-samples)
 
 ---
 
