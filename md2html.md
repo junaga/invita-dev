@@ -7,6 +7,7 @@
    2. [The fancy Markdown](#the-fancy-markdown)
 2. [Syntax differences](#syntax-differences)
 3. [Transpilation example](#transpilation-example)
+4. [Learning by doing](#learning-by-doing)
 
 ---
 
@@ -37,7 +38,7 @@ But common users also come frequently in contact with Markdown. A lot of Forums 
 
 ## Syntax differences
 
-Markdown _becomes transpiled_ into HTML, which in turn then renders, the actual view. `## Title` becomes `<h2>Title</h2>`. For every Markdown statement, there is an equivalent **element** in HTML. While in Markdown, there are multiple statements that declare a markup (There is the `#` and `##` headers syntax. The `1.` and `-` listing syntax). There is only a single statement in HTML, the HTML **element**.
+Markdown _becomes transpiled_ into HTML, which in turn then renders the actual view. `## Title` becomes `<h2>Title</h2>`. For every Markdown statement, there is an equivalent **element** in HTML. While in Markdown, there are multiple statements that declare a markup (There is the `#` and `##` headers syntax. The `1.` and `-` listing syntax). There is only a single statement in HTML, the HTML **element**.
 
 Elements are declared using the **element name** surrounded by **angel brackets** `<`, `>`. They can optionally include HTML **attributes**. There are two types of elements:
 
@@ -116,3 +117,7 @@ closing in on the speed of light.
 Note: Whitespace (Newline, Space etc), is actually ignored in HTML. This code includes line breakes only to improve readibly for the author. This is done automaticly by code formatting tools like [prettier](https://prettier.io/). The entire HTML could just as well be written in a single line.
 
 Note: This HTML is a slightly simplified version of the actual transpiled output. The `id` attribute was dropped, and `<strong>` and `<em>` were replaced by `<b>` and `<i>`. Both versions are equal to the reader, they produce the exact same view (semantically and stylistically) when rendered.
+
+## Learning by doing
+
+I encourage you to just write some HTML to get the hang of it. Open your HTML files in the browser, and check them out using [DevTools](https://developer.chrome.com/docs/devtools/) (`ctrl+shift+j`). If you still feel not ready to get going, [MDN](https://developer.mozilla.org/en-US/) is the best place to learn about the web.
