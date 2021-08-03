@@ -47,6 +47,19 @@ Bold is better then caps.
 - Represents custom language
 - exists in markdown
 
+### Sectioning elements
+
+Multiple elements combined should be grouped by sections, using these _sectioning elements_.
+
+### `<main>` Main
+
+- Should be used only once
+- Represents the dominent and unique content of the document
+
+### `<section>` Section
+
+Generel purpose sectioning element, like `<div>` but for document structure. If there exists a semantically more meaningfull element it should be used.
+
 ## Meta and misc
 
 HTML `<!-- comments -->` can be used **anywhere**. Conditional comments are not allowed.
