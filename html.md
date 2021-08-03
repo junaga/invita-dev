@@ -26,6 +26,12 @@ Elements that contain the written word.
 - Heading/Title of sections
 - exists in Markdown
 
+#### `<blockquote>` Block Quotation
+
+- quote entire paragraphs
+- exists in Markdown
+- you can `cite` the quote source URL
+
 ### Inline text elements
 
 These elements are meant to be consumed inside "Text content elements" to give special semantic meaning to a short piece of text, or a single word. They should not have other child elements.
