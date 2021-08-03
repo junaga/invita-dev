@@ -8,7 +8,7 @@ My own (strongly opinionated) HTML (p)reference of **elements** and **attributes
 
 ## Elements
 
-#### `<div>` Division
+### `<div>` Division
 
 The generel purpose element, or container for attributes. If there exists a semantically more meaningfull element it should be used.
 
@@ -16,18 +16,18 @@ The generel purpose element, or container for attributes. If there exists a sema
 
 Elements that display the written word.
 
-#### `<p>` Paragraph
+### `<p>` Paragraph
 
 - exists in Markdown (has no statement/operator)
 
-#### `<h1>` - `<h6>` Heading
+### `<h1>` - `<h6>` Heading
 
 - Heading of sections
 - exists in Markdown
 
-#### `<blockquote>` Block Quotation
+### `<blockquote>` Block Quotation
 
-- quote entire paragraphs
+- Quote entire paragraphs
 - exists in Markdown
 - you can `cite` the quotes source URL
 
