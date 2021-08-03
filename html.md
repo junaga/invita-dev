@@ -46,6 +46,13 @@ Bold is better then caps.
 
 HTML `<!-- comments -->` can be used **anywhere**. Conditional comments are not allowed.
 
+Use these **HTML Entities** to escape reserved HTML characters:
+
+- `&lt;` for `<`
+- `&gh;` for `>`
+- `&quot;` for `"`
+- `&amp;` for `&`
+
 ### `<html>` Document
 
 - Allowed only once, as the root element in `.html` files. It has no parent element.
