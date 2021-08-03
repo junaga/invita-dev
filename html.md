@@ -2,7 +2,7 @@
 
 My own (strongly opinionated) HTML (p)reference of **elements** and **attributes**. Built from personal experience, the [MDN ref](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference) and the [AMPHTML spec](https://github.com/ampproject/amphtml/blob/main/docs/spec/amp-html-format.md). Grouped into three sections:
 
-1. [Elements](#Elements) - In the visible viewport renderd, `<body>` child elements.
+1. [Elements](#Elements) - In the visible viewport rendered, `<body>` child elements.
 2. [Global Attributes](#Global-Attributes) - Attributes valid on all elements, even the root `<html>`.
 3. [Meta and misc](#Meta-and-misc) - Metadata `<head>` child elements and other miscellaneous things.
 
@@ -10,27 +10,26 @@ My own (strongly opinionated) HTML (p)reference of **elements** and **attributes
 
 #### `<div>` Division
 
-A generel purpose element or container. If there exists a semantically more meaningfull element it should be used.
+The generel purpose element, or container for attributes. If there exists a semantically more meaningfull element it should be used.
 
 ### Text content elements
 
-Elements that contain the written word.
+Elements that display the written word.
 
 #### `<p>` Paragraph
 
-- simple, line wrapped text
 - exists in Markdown (has no statement/operator)
 
 #### `<h1>` - `<h6>` Heading
 
-- Heading/Title of sections
+- Heading of sections
 - exists in Markdown
 
 #### `<blockquote>` Block Quotation
 
 - quote entire paragraphs
 - exists in Markdown
-- you can `cite` the quote source URL
+- you can `cite` the quotes source URL
 
 ### Inline text elements
 
@@ -62,7 +61,7 @@ Use these **HTML Entities** to escape reserved HTML characters:
 ### `<html>` Document
 
 - Allowed only once, as the root element in `.html` files. It has no parent element.
-- The only valid content are `<head>` and `<body>` child elements (in that order).
+- The only valid content are `<head>` and `<body>` children (in that order).
 - `<!DOCTYPE html>` should preface the `<html>` opening tag.
 
 The `<!DOCTYPE html>` statement _forces_ HTML5 interpretation mode for the document. It takes [guess work](https://developer.mozilla.org/en-US/docs/Web/HTML/Quirks_Mode_and_Standards_Mode) of the browser, and guarantees compatibility.
