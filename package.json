@@ -1,4 +1,6 @@
 {
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "prettier": "^2.3.2"
+  }
 }
