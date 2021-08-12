@@ -1,123 +1,123 @@
-# From Markdown to HTML
+# Von Markdown zu HTML
 
-[Markdown](https://commonmark.org/) and [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) are both so called [markup languages](https://en.wikipedia.org/wiki/Markup_language), used to create digital **documents**. Under the hood, Markdown actually _becomes_ HTML when displayed. So any Markdown document can also be written in HTML directly. HTML is more difficult, but also offers more capabilities. In combination with CSS and Javascript it can even be used to build entire **applications** for the Web (the internet).
+[Markdown (vereinfachte Auszeichnungssprache)](https://commonmark.org/) und [HTML](https://developer.mozilla.org/de/docs/Web/HTML) sind beide sogenannte [Markup Sprachen (Auszeichnungssprachen)](https://de.wikipedia.org/wiki/Auszeichnungssprache), die verwendet werden, um digitale **Dokumente** zu erstellen. Tatsächlich _wird_ Markdown zu HTML, wenn es angezeigt wird. Das heißt, jedes Markdown-Dokument kann auch direkt in HTML geschrieben werden. HTML ist komplizierter, bietet aber auch mehr Möglichkeiten. In Kombination mit CSS und Javascript, kann es sogar genutzt werden, um ganze **Anwendungen** für das Web (das Internet) zu erstellen.
 
-1. [Quick history](#quick-history)
-   1. [The HTML standard](#the-html-standard)
-   2. [The fancy Markdown](#the-fancy-markdown)
-2. [Syntax differences](#syntax-differences)
-3. [Transpilation example](#transpilation-example)
-4. [Learning by doing](#learning-by-doing)
+1. [Schnelle Geschichte](#schnelle-geschichte)
+   1. [Der HTML Standard](#der-html-standard)
+   2. [Das schicke Markdown](#das-schicke-markdown)
+2. [Syntax Unterschiede](#syntax-unterschiede)
+3. [Transpilationsbeispiel](#transpilationsbeispiel)
+4. [Lernen durch Handeln](#lernen-durch-handeln)
 
 ---
 
-## Quick history
+## Schnelle Geschichte
 
-> "One of the things the Web teaches us is that everything is connected (hyperlinks) and we all should work together (standards). Too often school teaches us that everything is separate (many different 'subjects') and that we should all work alone." -Aaron Swartz
+> "Eines der Dinge, die das Internet lehrt, ist, dass alles verbunden ist (Hyperlinks) und wir sollten alle zusammenarbeiten (Standards). Zu oft lehrt uns die Schule, dass alles getrennt ist (viele verschiedene "Themen") und,dass wir alle alleine arbeiten sollten." -Aaron Swartz
 
-### The HTML standard
+### Der HTML Standard
 
-HTML was created in 1993 with the very first Web Browser. After that, **many browsers**, with **many versions** of HTML and CSS followed.
+HTML wurde im Jahr 1993 mit dem ersten Webbrowser entwickelt. Danach folgten **viele Browser** mit **vielen Versionen** von HTML und CSS.
 
 1. Netscape
 2. Internet Explorer (`-ms` in CSS)
 3. Safari (`-webkit` in CSS)
 4. Firefox (`-moz` in CSS)
 
-In 2008 HTML has been unified, into HTML5 (`<!DOCTYPE html>`) the so called _Living standard_. But CSS remains different across browsers, everyone has their own _user agent stylesheet_. Making `<button>` look different on Firefox then Chrome.
+Im Jahr 2008 wurde HTML einheitlich in HTML5 (`<! Doctype html>`), den sogenannten _LIVE-Standard_, übernommen.
+CSS bleibt jedoch zwischen den Browsern unterschiedlich, jeder verfügt über ein eigenes _user-Agent-Stylesheet_.
+Das hat zur Folge, dass `<Knöpfe>` in Firefox anders aussehen, als in Chrome.
 
-### The fancy Markdown
+### Das schicke Markdown
 
-Invented in 2004. A simple perl script to transform a Markdown file `.md` into a `.html` one. It became a popular markup solution, because the source text itself also has good readability. Since then, it took over the web pretty good. Web developers love to write their documentation in Markdown, and many blogs are built with it.
+Im Jahr 2004 erfunden. Ein einfaches Perl-Skript, um eine Markdown-Datei `.md` in eine `.html` zu wandeln.
+Es wurde zu einer beliebten Markup-Lösung, da auch der Quelltext selbst eine gute Lesbarkeit hat. Seitdem wurde es vom Web ziemlich gut angenommen. Web-Entwickler lieben es, ihre Dokumentation in Markdown zu schreiben, und viele Blogs werden damit gebaut.
 
-But common users also come frequently in contact with Markdown. A lot of Forums and Websites allow users to _markup_ their posts. A few quick example include:
+Normale Benutzer kommen jedoch auch häufig in Kontakt mit Markdown. Viele Foren und Websites ermöglichen Benutzern ihre Beiträge zu _MarkUp_-en. Ein paar schnelle Beispiele umfassen:
 
-- Reddit - posts
-- StackOverflow - questions and answers
-- GitHub - issues and comments
+- Reddit -Posts
+- StackOverflow - Fragen und Antworten
+- GitHub - Probleme und Kommentare
 
-## Syntax differences
+## Syntax Unterschiede
 
-Markdown _becomes transpiled_ into HTML, which in turn then renders the actual view. `## Title` becomes `<h2>Title</h2>`. For every Markdown statement, there is an equivalent **element** in HTML. While in Markdown, there are multiple statements that declare a markup (There is the `#` and `##` headers syntax. The `1.` and `-` listing syntax). There is only a single statement in HTML, the HTML **element**.
+Markdown wird zu HTML _transpiliert_, was wiederum die tatsächliche Ansicht rendert. `## Titel` wird `<h2>Titel</h2>`. Für jede Markdown-Anweisung gibt es ein Äquivalent **Element** in HTML. Während es in Markdown mehrere Anweisungen gibt, die ein MarkUp deklarieren (Es gibt das `#` und `##` Überschrift-Syntax. Das `1.` und `-` Auflistung-Syntax), gibt es nur eine einzige Anweisung in HTML, das HTML **Element**.
 
-Elements are declared using the **element name** surrounded by **angel brackets** `<`, `>`. They can optionally include HTML **attributes**. There are two types of elements:
+Elemente werden mit dem **Elementnamen**, der von **Engel-Klammern** umgeben ist, deklariert `<`, `>`. Sie können optional HTML **Attribute** enthalten. Es gibt zwei Arten von Elementen:
 
-1. Normal elements: `<ELEMENT ATTRIBUTE="VALUE" ...>CONTENT</ELEMENT>`
-2. Singleton elements: `<ELEMENT ATTRIBUTE="VALUE" ...>`
+1. Normale Elemente: `<ELEMENT ATTRIBUT="WERT" ...>INHALT</ELEMENT>`
+2. Singleton Elemente: `<ELEMENT ATTRIBUT="WERT" ...>`
 
-Attributes **are optional** and are always written in the **opening tag**, seperated by a blank space. Normal elements have an opening tag and a **closing tag** (notice the `/`). The **content** in between, are **other elements** recursively nested. Singleton elements have no closing tag, and therefore cannot have other child elements as content. More on [MDN](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics).
+Attribute **sind optional** und werden immer in den **öffnende Tag (Marker)** geschrieben, der von einem Leerzeichen getrennt wird. Normale Elemente verfügen über einen Öffnungs-Tag und einen **Schließen-Tag** (Zu beachten sind die `/`). Der **Inhalt** dazwischen sind **andere Elemente**, rekursiv verschachtelt. Singleton-Elemente haben keinen Schließungs-Tag und können daher keine anderen untergeordneten Elemente als Inhalt haben. Mehr auf
+[MDN](https://developer.mozilla.org/de/docs/Learn/Getting_started_with_the_web/HTML_basics).
 
-Note: Plain text itself, like `How are you?` is considered an element too in HTML.
+Hinweis: Einfacher Text, wie `Wie geht es Ihnen?` Wird auch als Element in HTML betrachtet.
 
-## Transpilation example
+## Transpilationsbeispiel
 
-Here is a quick example of how Markdown becomes HTML. Take a look at the Markdown file below. It consists of a heading (a title), some paragraphs, an item list, and bold and italic text emphasis. Following that, comes its transpiled HTML output. The HTML output includes these elements:
+Hier ist ein kurzes Beispiel dafür, wie Markdown zu HTML wird. Man betrachte die untenstehende Markdown-Datei. Sie besteht aus einer Überschrift (einem Titel), einigen Absätzen, einer Inhaltsliste und einem fetten und kursiven Text.Danach kommt die transpilierte HTML-Ausgabe. Die HTML-Ausgabe enthält diese Elemente:
 
 - `<p>` - Paragraph
-- `<h2>` - Heading
-- `<ul>` and `<li>` - Unordered list and List item
-- `<a>` with `href` - Anchor with Hypertext reference
-- `<b>` - Bold
-- `<i>` - Italic
+- `<h2>` - Überschrift
+- `<ul>` und `<li>` - Unsodtierte Liste und Listeninhalten
+- `<a>` mit `href` - Anker mit Hypertext-Referenz
+- `<b>` - Fett gedruckt
+- `<i>` - Kursiv
 
-To learn more about these elements, you can checkout the MDN [HTML elements reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element).
+Um mehr über diese Elemente zu erfahren, bietet sich das MDN an [HTML-Elemente-Referenz](https://developer.mozilla.org/de/docs/Web/HTML/Element).
 
-### The Markdown source text
+### Der Markdown-Quelltext
 
 ```md
-## The Gutenburg Press
+## Die Gutenberg Presse
 
-The [printing press](https://wikipedia.org/wiki/Printing_press) was
-invented by goldsmith Johannes Gutenberg. The Gutenberg press was a dramatic
-improvement compared to previous printing methods. It is credited with being
-the **most significant** invetion, of the second millennium.
+Die [Druckpresse](https://de.wikipedia.org/wiki/Druckpresse) wurde vom Goldschmied Johannes Gutenberg erfunden.
+Die Gutenbergpresse war eine dramatische Verbesserung im Vergleich zu früheren Druckmethoden. Sie wird als die **wichtigste** Erfindung des zweiten Milleniums bezeichnet.
 
-- Invented around 1440 in Germany
-- Included a mould of _movable_ glyhps
-- Could produce up to 3,600 pages per workday
+- In Deutschland um 1440 erfunden
+- Beinhaltete _bewegliche_ Glyhpen
+- Konnte bis zu 3.600 Seiten pro Arbeitstag produzieren
 
-The operation of a press became synonymous with the business of printing. It
-also gave name to societies newest form of communication "the press".
-Journalism was born.
+Der Betrieb einer Druckerpresse wurde Synonym für das Druckgeschäft.
+Sie ist ebenso namensgebend für die neuste Kommunikationsform der Gesellschaft "Die Presse".
+Journalismus wurde geboren.
 
-It is easy to argue that the 90's web (the internet), is a new iteration of
-that very same invention. It made it easier to both: publish
-_and_ consume information. Human communication became almost instant,
-closing in on the speed of light.
+Es ist leicht zu behaupten, dass das 90er-Web (das Internet) eine neue Iteration von derselben Erfindung ist. Es hat es beidem einfacher gemacht: Information zu veröffentlichen _und_ zu konsumieren. Die menschliche Kommunikation fand beinahe in Echtzeit statt und näherte sich der Lichtgeschwindigkeit.
 ```
 
-### The transpiled HTML output
+### Die transpilierte HTML-Ausgabe
 
 ```html
-<h2>The Gutenburg Press</h2>
+<h2>Die Gutenberg Presse</h2>
 <p>
-  The <a href="https://wikipedia.org/wiki/Printing_press">printing press</a> was
-  invented by goldsmith Johannes Gutenberg. The Gutenberg press was a dramatic
-  improvement compared to previous printing methods. It is credited with being
-  the <b>most significant</b> invetion, of the second millennium.
+  Die <a href="https://de.wikipedia.org/wiki/Druckpresse">Druckpresse</a> wurde
+  vom Goldschmied Johannes Gutenberg erfunden. Die Gutenbergpresse war eine
+  dramatische Verbesserung im Vergleich zu früheren Druckmethoden. Sie wird als
+  die <b>wichtigste</b> Erfindung des zweiten Milleniums bezeichnet.
 </p>
 <ul>
-  <li>Invented around 1440 in Germany</li>
-  <li>Included a mould of <i>movable</i> glyhps</li>
-  <li>Could produce up to 3,600 pages per workday</li>
+  <li>In Deutschland um 1440 erfunden</li>
+  <li>Beinhaltete <i>bewegliche</i> Glyphen</li>
+  <li>Konnte bis zu 3.600 Seiten pro Arbeitstag produzieren</li>
 </ul>
 <p>
-  The operation of a press became synonymous with the business of printing. It
-  also gave name to societies newest form of communication "the press".
-  Journalism was born.
+  Der Betrieb einer Druckerpresse wurde Synonym für das Druckgeschäft. Sie ist
+  ebenso namensgebend für die neuste Kommunikationsform der Gesellschaft "Die
+  Presse". Journalismus wurde geboren.
 </p>
 <p>
-  It is easy to argue that the 90's web (the internet), is a new iteration of
-  that very same invention. It made it easier to both: publish
-  <i>and</i> consume information. Human communication became almost instant,
-  closing in on the speed of light.
+  Es ist leicht zu behaupten, dass das 90er-Web (das Internet) eine neue
+  Iteration von derselben Erfindung ist. Es hat es beidem einfacher gemacht:
+  Information zu veröffentlichen
+  <i>und</i> zu konsumieren. Die menschliche Kommunikation fand beinahe in
+  Echtzeit statt und näherte sich der Lichtgeschwindigkeit.
 </p>
 ```
 
-Note: Whitespace (Newline, Space etc), is actually ignored in HTML. This code includes line breakes only to improve readibly for the author. This is done automaticly by code formatting tools like [prettier](https://prettier.io/). The entire HTML could just as well be written in a single line.
+Hinweis: Whitespaces (Zeilenumbrüche, Leerzeichen usw.), werden normalerweise in HTML ignoriert. Dieser Code enthält Linienbrüche, die nur für den Autor vorgesehen sind. Dies erfolgt automatisch von Code-Formatierungswerkzeugen wie [prettier](https://prettier.io/). Das gesamte HTML könnte genauso gut in einer einzigen Zeile geschrieben werden.
 
-Note: This HTML is a slightly simplified version of the actual transpiled output. The `id` attribute was dropped, and `<strong>` and `<em>` were replaced by `<b>` and `<i>`. Both versions are equal to the reader, they produce the exact same view (semantically and stylistically) when rendered.
+Hinweis: Dieses HTML ist eine etwas vereinfachte Version der tatsächlichen transpilierten Ausgabe. Das `id` Attribut wurde entfernt und `<strong>` und `<em>` wurden durch ersetzt durch `<b>` und `<i>`. Beide Versionen sind für den Leser identisch, sie erzeugen die genaue Ansicht (semantisch und stilistisch), wenn sie gerendert werden.
 
-## Learning by doing
+## Lernen durch Handeln
 
-I encourage you to just write some HTML to get the hang of it. Open your HTML files in the browser, and check them out using [DevTools](https://developer.chrome.com/docs/devtools/) (`ctrl+shift+j`). If you still feel not ready to get going, [MDN](https://developer.mozilla.org/en-US/) is the best place to learn about the web.
+Ich ermutige jeden, einfach etwas HTML zu schreiben, um den Umgang damit zu lernen. Einfach ein paar HTML-Dateien im Browser öffnen und mit[DevTools](https://developer.chrome.com/docs/devtools/) (`strg+shift+j`) überprüfen. Wenn man sich noch nicht bereit fühlt, ist [MDN](https://developer.mozilla.org/de/) ist der beste Ort, um mehr über das Internet zu lernen.
