@@ -8,7 +8,7 @@ My own (strongly opinionated) HTML (p)reference of **elements** and **attributes
 
 ## Elements
 
-### `<div>` Division
+`<div>` Division
 
 The generel purpose element, or container for attributes. If there exists a semantically more meaningfull element it should be used.
 
@@ -16,16 +16,16 @@ The generel purpose element, or container for attributes. If there exists a sema
 
 Elements that display the written word.
 
-### `<p>` Paragraph
+`<p>` Paragraph
 
 - exists in Markdown (has no statement/operator)
 
-### `<h1>` - `<h6>` Heading
+`<h1>` - `<h6>` Heading
 
 - Heading of sections
 - exists in Markdown
 
-### `<blockquote>` Block Quotation
+`<blockquote>` Block Quotation
 
 - Quote entire paragraphs
 - exists in Markdown
@@ -35,14 +35,14 @@ Elements that display the written word.
 
 These elements are meant to be consumed inside "Text content elements" to give special semantic meaning to a short piece of text, or a single word. They should not have other child elements.
 
-### `<b>` Bold
+`<b>` Bold
 
 - Highlights keywords
 - exists in markdown
 
 Bold is better then caps.
 
-### `<i>` Italic
+`<i>` Italic
 
 - Represents custom language
 - exists in markdown
@@ -51,12 +51,12 @@ Bold is better then caps.
 
 Multiple elements combined should be grouped by sections, using these _sectioning elements_.
 
-### `<main>` Main
+`<main>` Main
 
 - Should be used only once
 - Represents the dominent and unique content of the document
 
-### `<section>` Section
+`<section>` Section
 
 Generel purpose sectioning element, like `<div>` but for document structure. If there exists a semantically more meaningfull element it should be used.
 
@@ -71,7 +71,7 @@ Use these **HTML Entities** to escape reserved HTML characters:
 - `&quot;` for `"`
 - `&amp;` for `&`
 
-### `<html>` Document
+`<html>` Document
 
 - Allowed only once, as the root element in `.html` files. It has no parent element.
 - The only valid content are `<head>` and `<body>` children (in that order).
@@ -79,13 +79,13 @@ Use these **HTML Entities** to escape reserved HTML characters:
 
 The `<!DOCTYPE html>` statement _forces_ HTML5 interpretation mode for the document. It takes [guess work](https://developer.mozilla.org/en-US/docs/Web/HTML/Quirks_Mode_and_Standards_Mode) of the browser, and guarantees compatibility.
 
-### `<head>` Metadata
+`<head>` Metadata
 
 - Allowed only once
 - Machine-readable metadata
 - [These](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head#see_also) elements are valid children.
 
-### `<body>` Content
+`<body>` Content
 
 - Allowed only once
 - Holds the entire visible viewport, all Elements that are not "Meta"
