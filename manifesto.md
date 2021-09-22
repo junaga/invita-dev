@@ -2,3 +2,4 @@
 
 1. Everything is virtual
 2. Almost everything is a file
+3. The Windows system is fucking trash
