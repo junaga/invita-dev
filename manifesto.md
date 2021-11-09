@@ -1,3 +1,5 @@
+Don't be evil.
+
 ## In the world of software..
 
 1. Everything is virtual
