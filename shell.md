@@ -6,11 +6,11 @@ Small overview of the very basic unix **binaries** and **shell builtins**, every
 - Use the `type COMMAND` builtin to find out if it's a real program (a binary) or captured by the shell in advance (a shell builtin)
 - Most programs are traditionally documented with `man COMMAND` (manual) pages
 
-I strongly recommend installing [tldr](https://github.com/tldr-pages/tldr#readme) (Too long; didn't read). Use `tldr COMMAND` to find out what any given command does. It lists some simple and modern day, usage examples. Remember to RTFM, and happy hacking.
+I strongly recommend installing [tldr](https://github.com/tldr-pages/tldr#readme) (Too long; didn't read). Use `tldr COMMAND` to find out what any given command does. It lists some, simple and modern day, usage examples. Remember to RTFM, and happy hacking.
 
 ## Basics
 
-You can _enter_ the path of any [computer program](https://en.wikipedia.org/wiki/Computer_program) to run (execute) it. For example: `./start-server`, `/bin/ls` or `/bin/bash`. Below are some very basic programs (binaries) available on **any unix system** by default (guarenteed to be in `$PATH`). Remember to use the `cd DIRECTORY` shell builtin to navigate the PWD.
+You can _enter_ the path of any [computer program](https://en.wikipedia.org/wiki/Computer_program) to run (execute) it. For example: `./start-server`, `/bin/ls` or `/bin/bash`. Below are some very basic programs (binaries) available by default, guarenteed to be in `$PATH`, on _any_ unix system. Remember to use the `cd DIRECTORY` shell builtin to navigate the PWD.
 
 ```sh
 # List files in a directory
