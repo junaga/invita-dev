@@ -1,16 +1,16 @@
 Small overview of the very basic unix **binaries** and **shell builtins**, every user should know. This document assumes that you know how a computer operating system works.
 
-## Get help with X
+## Get help with "`COMMAND`"
 
-- Check out a commands' reference using the `X --help` flag
-- Use the `type X` builtin to find out if it's a real program (a binary) or captured by the shell in advance (a shell builtin)
-- Most programs are traditionally documented with `man X` (manual) pages
+- Check out a commands' reference using the `COMMAND --help` flag
+- Use the `type COMMAND` builtin to find out if it's a real program (a binary) or captured by the shell in advance (a shell builtin)
+- Most programs are traditionally documented with `man COMMAND` (manual) pages
 
-I strongly recommend installing [tldr](https://github.com/tldr-pages/tldr) (Too long, didn't read). Use `tldr X` to find out what any command does. It lists some, simple and modern day, usage examples. Remember to RTFM, and happy hacking.
+I strongly recommend installing [tldr](https://github.com/tldr-pages/tldr#readme) (Too long; didn't read). Use `tldr COMMAND` to find out what any given command does. It lists some simple and modern day, usage examples. Remember to RTFM, and happy hacking.
 
 ## Basics
 
-You can **enter** the path of any computer **program** to run it. i.e. `./start-server` or `/bin/ls`. Below are some very basic programs (binaries) available on **any unix system** by default (guarenteed to be in `$PATH`). Remember to use the `cd DIRECTORY` shell builtin to navigate the PWD.
+You can _enter_ the path of any [computer program](https://en.wikipedia.org/wiki/Computer_program) to run (execute) it. For example: `./start-server`, `/bin/ls` or `/bin/bash`. Below are some very basic programs (binaries) available on **any unix system** by default (guarenteed to be in `$PATH`). Remember to use the `cd DIRECTORY` shell builtin to navigate the PWD.
 
 ```sh
 # List files in a directory
