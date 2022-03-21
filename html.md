@@ -1,85 +1,64 @@
 # HTML Reference
 
-My own (strongly opinionated) HTML (p)reference. Built from personal experience, the [MDN ref](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference), the [AMPHTML spec](https://amp.dev/documentation/guides-and-tutorials/learn/spec/amphtml/) and the [Lighthouse tool](https://github.com/GoogleChrome/lighthouse#readme).
+My own (strongly opinionated) [HTML](https://developer.mozilla.org/en-US/docs/Glossary/HTML) (p)reference. Built from personal experience, the [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference), the [AMPHTML docs](https://amp.dev/documentation/guides-and-tutorials/learn/spec/amphtml/) and the [Lighthouse tool](https://github.com/GoogleChrome/lighthouse#readme).
 
-1. [Elements](#elements) - In the viewport rendered, `<body>` child elements.
-2. [Global Attributes](#global-attributes) - Attributes valid on all elements, even the root `<html>`.
+## Inline Elements <!-- MDN: subset of Phrasing content category -->
 
-## Elements
+Markup a single word or piece of text.
 
-`<div>` [Division](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div)
+### `<i>`
 
-- Generel purpose element
-- Container for attributes or styles
+- [Italic][mdn-i] emphasis
+- [Use custom language](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i#usage_notes)
+- Exists in markdown (`_ITALICS_`)
 
-### Sectioning elements
+### `<b>`
 
-Devide elements into sections.
+- [Bold][mdn-b] emphasis
+- [Highlight keywords](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b)
+- Exists in markdown (`**BOLD**`)
 
-`<section>` - [Section](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section)
+## Elements <!-- MDN: subsets of Flow and Embedded content categories -->
 
-`<header>` - [Header](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header)
+### `<div>`
 
-`<footer>` - [Footer](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer)
+- [Division][mdn-div] without semantic meaning
+- Select content using CSS or JS
 
-### Text content elements
+### `<p>`
 
-Elements that display the written word.
+- [Paragraph][mdn-p] of text
+- Exists in Markdown (seperated by empty lines)
 
-`<p>` - [Paragraph](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p)
+### `<ul>`
 
-- exists in Markdown (has no statement/operator)
+- [Unorderd List][mdn-ul] of `<li>` elements
+- Exists in Markdown `- ITEM`
 
-`<h1>`-`<h6>` - [Headings](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements)
+### `<li>`
 
-- Headings of sections
-- exists in Markdown
+- [List Item][mdn-li], from a set or array, of content
+- Must be child of `<ul>`
 
-`<q>` - [Quote](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q)
+## Sectioning Elements <!-- MDN: subsets Heading and Sectioning, content categories -->
 
-- Quote a paragraph
-- you can `cite` the quotes source URL
+Divide the page into sections/landmarks/an outline.
 
-### Inline text elements
+### `<h1>`
 
-These elements are meant to be consumed inside "Text content elements" to give special semantic meaning to a short piece of text, or a single word. They should not have other child elements.
+- Allowed only once
+- [Heading][mdn-headings] Webpage title
+- Exists in Markdown `# HEADING`
 
-`<b>` [Bold](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b)
+### `<h2>` - `<h6>`
 
-- Highlights keywords
-- exists in markdown
+- [Heading][mdn-headings] Webpage section title
+- Exists in Markdown `## HEADING` - `###### HEADING`
 
-`<i>` [Italic](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i)
-
-- Represents custom language
-- exists in markdown
-
-`<code>` [Code](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code)
-
-- Indicates computer code
-- exists in markdown
-
-## Global Attributes
-
-`class` [List of classes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/class)
-
-Each class name carries semantic meaning on it's own. They enhance the elements meaning, in order of appearence.
-
-- lower-kebab-case-only. space as seperator
-- Used as selector by CSS and Javascript
-
-`id` [Unique ID](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/id)
-
-- Link to an element, **within** the page
-- lower-kebab-case-only
-- Used as selector by CSS and Javascript
-
-`lang` [Language](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang)
-
-- Set the human language of elements
-- `en-US`, `de`, etc
-
-`dir` [Text Direction](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/dir)
-
-- Set the text direction of elements
-- `rtl` or `ltr`
+[mdn-i]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i
+[mdn-b]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b
+[mdn-div]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div
+[mdn-p]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p
+[mdn-ul]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul
+[mdn-li]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li
+[mdn-headings]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements
