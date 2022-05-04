@@ -6,6 +6,11 @@ My own (strongly opinionated) HTML (p)reference. Built from personal experience,
 
 Markup a single word or piece of text. A subset of the [Phrasing content](https://html.spec.whatwg.org/multipage/dom.html#phrasing-content) category.
 
+### `<q>`
+
+- [Quote][mdn-q] something
+- you can `cite="URL"` a source
+
 ### `<i>`
 
 - [Italic][mdn-i] emphasis
@@ -55,6 +60,7 @@ Divide the page into sections/landmarks/an outline.
 - [Heading][mdn-headings] section title
 - Exists in Markdown `## HEADING` - `###### HEADING`
 
+[mdn-q]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q
 [mdn-i]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i
 [mdn-b]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b
 [mdn-div]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div
