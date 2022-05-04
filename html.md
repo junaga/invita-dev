@@ -45,7 +45,18 @@ Markup a single word or piece of text. A subset of the [Phrasing content](https:
 - [List Item][mdn-li], from a set or array, of content
 - Must be child of `<ul>`
 
-## Sectioning Elements <!-- MDN: subsets of Heading and Sectioning, content categories -->
+## Interactive Elements
+
+A subset of the [Interactive content](https://html.spec.whatwg.org/multipage/dom.html#interactive-content) category.
+
+### `<a href="URL">`
+
+- [Anchor. Hyper-reference][mdn-a] URLs
+- `download` the resource instead
+- add `target="_blank"` to open in a new tab
+- Exists in markdown - `[TEXT](URL)`
+
+## Sectioning Elements
 
 Divide the page into sections/landmarks/an outline.
 
@@ -60,6 +71,7 @@ Divide the page into sections/landmarks/an outline.
 - [Heading][mdn-headings] section title
 - Exists in Markdown `## HEADING` - `###### HEADING`
 
+[mdn-a]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a
 [mdn-q]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q
 [mdn-i]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i
 [mdn-b]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b
