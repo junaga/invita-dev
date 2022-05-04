@@ -1,6 +1,6 @@
 # HTML Reference
 
-My own (strongly opinionated) [HTML](https://developer.mozilla.org/en-US/docs/Glossary/HTML) (p)reference. Built from personal experience, the [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference), the [AMPHTML docs](https://amp.dev/documentation/guides-and-tutorials/learn/spec/amphtml/) and the [Lighthouse tool](https://github.com/GoogleChrome/lighthouse#readme).
+My own (strongly opinionated) HTML (p)reference. Built from personal experience, the [MDN docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference), and the [Lighthouse tool](https://github.com/GoogleChrome/lighthouse#readme). Inspired by [AMPHTML](https://amp.dev/documentation/guides-and-tutorials/learn/spec/amphtml/).
 
 ## Inline Elements <!-- MDN: subset of Phrasing content category -->
 
