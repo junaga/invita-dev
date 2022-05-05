@@ -71,6 +71,17 @@ Divide the page into sections/landmarks/an outline.
 - [Heading][mdn-headings] section title
 - Exists in Markdown `## HEADING` - `###### HEADING`
 
+## Elements I don't use,
+
+and their suggested alternative in semantics (HTML).
+Including of course, all [deprecated Elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element#obsolete_and_deprecated_elements).
+
+- `<em>` - prefer: `<i>`
+- `<strong>` - prefer: `<b>`
+- `<u>` - prefer `<mark>`
+- `<blockquote>` - prefer `<q>`
+- `<ol>` - prefer `<ul>`
+
 [mdn-a]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a
 [mdn-q]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q
 [mdn-i]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i
