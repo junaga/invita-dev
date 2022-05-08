@@ -50,21 +50,21 @@ Markup a single word or piece of text. A subset of the [Phrasing content](https:
 - [Table][mdn-table] of `<tr>` elements
 - Basically a 2D `<ul>`
 
-### `<tr>`
+  ### `<tr>`
 
-- [Table row][mdn-tr] with `<td>` or `<th>`
-- Must be child of `<table>`
+  - [Table row][mdn-tr] with `<td>` or `<th>`
+  - Must be child of `<table>`
 
-### `<td>`
+  ### `<td>`
 
-- [Table data][mdn-td] cell, from a 2 dimensional set or array
-- Must be child of `<tr>`
+  - [Table data][mdn-td] cell, from a 2 dimensional set or array
+  - Must be child of `<tr>`
 
-### `<th>`
+  ### `<th>`
 
-- [Table Header][mdn-th] cell
-- can be either `scope="col"` or `scope="row"`
-- Must be child of `<tr>`
+  - [Table Header][mdn-th] cell
+  - can be either `scope="col"` or `scope="row"`
+  - Must be child of `<tr>`
 
 ## Interactive Elements
 
