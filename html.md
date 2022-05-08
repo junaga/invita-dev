@@ -40,10 +40,10 @@ Markup a single word or piece of text. A subset of the [Phrasing content](https:
 - [Unorderd List][mdn-ul] of `<li>` elements
 - Exists in Markdown: `- ITEM`
 
-### `<li>`
+  ### `<li>`
 
-- [List Item][mdn-li], from a set or array, of content
-- Must be child of `<ul>`
+  - [List Item][mdn-li], from a set or array, of content
+  - Must be child of `<ul>`
 
 ### `<table>`
 
