@@ -45,6 +45,27 @@ Markup a single word or piece of text. A subset of the [Phrasing content](https:
 - [List Item][mdn-li], from a set or array, of content
 - Must be child of `<ul>`
 
+### `<table>`
+
+- [Table][mdn-table] of `<tr>` elements
+- Basically a 2D `<ul>`
+
+### `<tr>`
+
+- [Table row][mdn-tr] with `<td>` or `<th>`
+- Must be child of `<table>`
+
+### `<td>`
+
+- [Table data][mdn-td] cell, from a 2 dimensional set or array
+- Must be child of `<tr>`
+
+### `<th>`
+
+- [Table Header][mdn-th] cell
+- can be either `scope="col"` or `scope="row"`
+- Must be child of `<tr>`
+
 ## Interactive Elements
 
 A subset of the [Interactive content](https://html.spec.whatwg.org/multipage/dom.html#interactive-content) category.
@@ -81,6 +102,7 @@ Including of course, all [deprecated Elements](https://developer.mozilla.org/en-
 - `<u>` - prefer `<mark>`
 - `<blockquote>` - prefer `<q>`
 - `<ol>` - prefer `<ul>`
+- `<thead>`, `<tbody>` and `<tfoot>` - just nest `<tr>` in `<table>` directly
 
 [mdn-a]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a
 [mdn-q]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q
@@ -90,4 +112,8 @@ Including of course, all [deprecated Elements](https://developer.mozilla.org/en-
 [mdn-p]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p
 [mdn-ul]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul
 [mdn-li]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li
+[mdn-table]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table
+[mdn-tr]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tr
+[mdn-th]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/th
+[mdn-td]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/td
 [mdn-headings]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements
