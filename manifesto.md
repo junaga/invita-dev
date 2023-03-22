@@ -5,4 +5,5 @@ Don't be evil.
 1. Everything is virtual
 2. A byte is the smallest thing
 3. Almost everything is a file
-4. The Windows system is fucking trash
+4. Humans write in english
+5. The Windows system is really bad
